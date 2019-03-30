@@ -26,17 +26,12 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: {
-    title: {
-      type: String,
-      required: true
-    },
-    icon: {
-      type: String,
-      required: true
-    }
-  }
+<script lang="ts">
+import { Component, Vue, Prop } from "nuxt-property-decorator";
+
+@Component
+export default class Card extends Vue {
+  @Prop({ type: String, required: true }) title!: string
+  @Prop({ type: String, required: true }) icon!: string
 }
 </script>

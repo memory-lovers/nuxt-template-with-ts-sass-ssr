@@ -7,3 +7,11 @@
     <h3 class="subtitle is-6 has-text-grey">Author: <a href="https://github.com/anteriovieira">Antério Vieira</a></h3>
   </section>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from "nuxt-property-decorator";
+
+@Component
+export default class InspirePage extends Vue {
+}
+</script>

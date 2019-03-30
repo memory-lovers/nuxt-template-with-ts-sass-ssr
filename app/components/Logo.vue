@@ -7,6 +7,15 @@
   </div>
 </template>
 
+
+<script lang="ts">
+import { Component, Vue, Prop } from "nuxt-property-decorator";
+
+@Component
+export default class Logo extends Vue {
+}
+</script>
+
 <style>
 .VueToNuxtLogo {
   display: inline-block;
