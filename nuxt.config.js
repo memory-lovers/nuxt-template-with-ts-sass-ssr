@@ -2,6 +2,7 @@ import pkg from './package'
 
 export default {
   mode: 'universal',
+  srcDir: "app",
 
   /*
   ** Headers of the page
