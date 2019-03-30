@@ -1,7 +1,7 @@
 {
   "name": "nuxt-template-with-ts-sass-ssr",
   "version": "1.0.0",
-  "description": "uxt.js Template using TypeScript, Sass and SSR on Firebase Cloud Functions",
+  "description": "Nuxt.js Template using TypeScript, Sass and SSR on Firebase Cloud Functions",
   "author": "Memory Lovers",
   "private": true,
   "scripts": {
