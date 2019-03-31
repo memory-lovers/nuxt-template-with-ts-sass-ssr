@@ -157,7 +157,7 @@ Memory Lovers ([GitHub](https://github.com/memory-lovers) / [WebSite](https://me
 
 We develop [Trans-Notes](https://trans-notes.net/) is web service.
 
-<img src="https://trans-notes.net/img/jp/ogp.png" width="400px" title="Trans-Notes" alt="Trans-Notes"/>
+<img src="https://trans-notes.net/img/jp/ogp.png" width="600px" title="Trans-Notes" alt="Trans-Notes"/>
 
 Trans-Notes is a web service with the following features:
 
