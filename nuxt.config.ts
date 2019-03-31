@@ -1,4 +1,5 @@
 import NuxtConfiguration from '@nuxt/config'
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const environment = process.env.NODE_ENV || "development";
 const envSet = require(`./env.${environment}.js`);
 import commonHead from "./commonHead";
@@ -96,6 +97,23 @@ const config: NuxtConfiguration = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+      if (!ctx.isDev && ctx.isClient && config.plugins != null) {
+        config.plugins.push(
+          new UglifyJsPlugin({
+            sourceMap: true,
+            parallel: true,
+            extractComments: { filename: "LICENSES" },
+            uglifyOptions: {
+              output: {
+                comments: /^\**!|@preserve|@license|@cc_on/
+              },
+              compress: {
+                drop_console: true
+              }
+            }
+          })
+        );
+      }
     }
   }
 }
