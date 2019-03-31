@@ -35,11 +35,20 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "nuxt-property-decorator";
+import { Component, Vue, mixins } from "nuxt-property-decorator";
+import HeadMixin from "~/mixins/HeadMixin";
+import { HeadInfo } from "~/types";
 import Card from "~/components/Card.vue"
 
 @Component({ components: { Card } })
-export default class IndexPage extends Vue {
+export default class IndexPage extends mixins(HeadMixin) {
   name:string = 'HomePage';
+
+  public headInfo(): HeadInfo {
+    return {
+      title: "home_title",
+      description: "home_details"
+    };
+  }
 }
 </script>

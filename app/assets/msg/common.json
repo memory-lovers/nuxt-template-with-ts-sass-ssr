@@ -11,7 +11,11 @@
     "home_card_4_title": "軽量",
     "home_card_4_body": "他の内部依存関係はありません",
     "inspire_heading": "はじめよう",
-    "inspire_subheading": "作ったひと: <a href=\"https://github.com/memory-lovers\">めもらば</a>"
+    "inspire_subheading": "作ったひと: <a href=\"https://github.com/memory-lovers\">めもらば</a>",
+    "site_name": "Nuxtテンプレート(TypeScript+Buefy+Sass+SEO+i18n)",
+    "site_description": "TypeScript, Sass、Firebase Cloud FunctionsでのSSRを使ったNuxt.jsのテンプレート",
+    "home_details": "ホームのディスクリプション",
+    "inspire_details": "インスパイヤのディスクリプション"
   },
   "en": {
     "home_title": "Home",
@@ -25,6 +29,10 @@
     "home_card_4_title": "Lightweight",
     "home_card_4_body": "No other internal dependency",
     "inspire_heading": "Just start",
-    "inspire_subheading": "Author: <a href=\"https://github.com/memory-lovers\">Memory Lovers</a>"
+    "inspire_subheading": "Author: <a href=\"https://github.com/memory-lovers\">Memory Lovers</a>",
+    "site_name": "Nuxt Template (TypeScript+Buefy+Sass+SEO+i18n)",
+    "site_description": "Nuxt.js Template using TypeScript, Sass and SSR on Firebase Cloud Functions",
+    "home_details": "Description of Home Page",
+    "inspire_details": "Description of Inspire Page"
   }
 }

@@ -9,9 +9,17 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "nuxt-property-decorator";
+import { Component, Vue, mixins } from "nuxt-property-decorator";
+import HeadMixin from "~/mixins/HeadMixin";
+import { HeadInfo } from "~/types";
 
 @Component
-export default class InspirePage extends Vue {
+export default class InspirePage extends mixins(HeadMixin) {
+  public headInfo(): HeadInfo {
+    return {
+      title: "inspire_title",
+      description: "inspire_details"
+    };
+  }
 }
 </script>
