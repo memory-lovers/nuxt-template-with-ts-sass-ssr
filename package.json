@@ -6,9 +6,14 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "build": "npm run clean && npm run build:nuxt && npm run build:copy",
+    "build:nuxt": "nuxt build",
+    "build:copy": "rm -rf public && mkdir public && cp -R .nuxt functions/nuxt && cp -R .nuxt/dist/ public/assets && cp -R app/static/* public",
+    "serve": "firebase serve",
+    "deploy": "firebase deploy",
+    "clean": "rm -rf .nuxt public functions/nuxt"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",

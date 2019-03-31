@@ -93,6 +93,8 @@ const config: NuxtConfiguration = {
   ** Build configuration
   */
   build: {
+    publicPath: "/assets/",
+    extractCSS: true,
     /*
     ** You can extend webpack config here
     */

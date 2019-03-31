@@ -86,3 +86,7 @@ sw.*
 
 #### Custom Settings
 public/
+functions/nuxt/
+sitemap.xml
+.firebase/
+.firebaserc
