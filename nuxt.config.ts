@@ -53,6 +53,20 @@ const config: NuxtConfiguration = {
     '@nuxtjs/axios',
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
+    // Doc: https://nuxt-community.github.io/nuxt-i18n/
+    [
+      "nuxt-i18n",
+      {
+        parsePages: false,
+        locales: [{ code: "en", iso: "en_US" }, { code: "ja", iso: "ja_JP" }],
+        defaultLocale: "en",
+        vueI18n: {
+          fallbackLocale: "en",
+          messages: require("./app/assets/msg/common")
+        },
+        vueI18nLoader: true
+      }
+    ],
     // Doc: https://github.com/nuxt-community/sitemap-module
     "@nuxtjs/sitemap"
   ],
