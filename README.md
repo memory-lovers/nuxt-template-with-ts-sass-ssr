@@ -155,12 +155,15 @@ Memory Lovers ([GitHub](https://github.com/memory-lovers) / [WebSite](https://me
 
 ## PR
 
-We develop [Trans-Notes](https://trans-notes.net/) is web service.  
-Trans-Notes　is a web service with the following features:
+We develop [Trans-Notes](https://trans-notes.net/) is web service.
 
-1. Tanslate multi language at once
+<img src="https://trans-notes.net/img/jp/ogp.png" width="400px" title="Trans-Notes" alt="Trans-Notes"/>
+
+Trans-Notes is a web service with the following features:
+
+1. **Tanslate multi language at once**
 2. Manage base message and translated messages
-3. Export multi format: ex. Android XML, CSV and "nuxt-i18n JSON"!!
+3. **Export multi format**: ex. Android XML, CSV and **"nuxt-i18n JSON"!!**
 
 We think that using Trans-Notes makes internationalization easier.  
 Sorry, we don't ready English version yet.. Now we are preparing an English version.  
