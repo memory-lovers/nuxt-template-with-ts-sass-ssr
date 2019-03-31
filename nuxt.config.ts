@@ -53,12 +53,24 @@ const config: NuxtConfiguration = {
     '@nuxtjs/axios',
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
+    // Doc: https://github.com/nuxt-community/sitemap-module
+    "@nuxtjs/sitemap"
   ],
+
   /*
   ** Axios module configuration
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+
+  /*
+  ** Sitemap
+  */
+  sitemap: {
+    path: "/sitemap.xml",
+    hostname: envSet.baseUrl,
+    generate: true
   },
 
   /*
