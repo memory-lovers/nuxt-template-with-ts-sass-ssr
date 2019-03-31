@@ -1,9 +1,17 @@
 import NuxtConfiguration from '@nuxt/config'
 import pkg from './package.json';
+const environment = process.env.NODE_ENV || "development";
+const envSet = require(`./env.${environment}.js`);
 
 const config: NuxtConfiguration = {
   mode: 'universal',
   srcDir: "app",
+
+  /*
+  ** ENVIRONMENT PROPERTIES
+  ** See https://ja.nuxtjs.org/api/configuration-env
+  */
+  env: envSet,
 
   /*
   ** Headers of the page
