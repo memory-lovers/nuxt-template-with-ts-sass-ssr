@@ -23,6 +23,27 @@
           <span />
         </div>
       </div>
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link is-arrowless">
+              <div class="icon">
+                <span class="mdi mdi-earth mdi-24px mdi-light"></span>
+              </div>
+            </a>
+
+            <div class="navbar-dropdown">
+              <nuxt-link
+                class="navbar-item"
+                v-for="locale in $i18n.locales"
+                :key="locale.code"
+                :to="switchLocalePath(locale.code)"
+                :class="{'is-active' : (locale.code == $i18n.locale)}"
+              >{{ locale.code.toUpperCase() }}</nuxt-link>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <section class="main-content columns">
