@@ -43,6 +43,8 @@ const config: NuxtConfiguration = {
     '@nuxtjs/axios',
     // Doc: https://buefy.github.io/#/documentation
     'nuxt-buefy',
+    // Doc: https://github.com/nuxt-community/analytics-module
+    "@nuxtjs/google-analytics",
     // Doc: https://nuxt-community.github.io/nuxt-i18n/
     [
       "nuxt-i18n",
@@ -66,6 +68,13 @@ const config: NuxtConfiguration = {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+
+  /*
+  ** Google Analytics module configurations
+  */
+  "google-analytics": {
+    id: envSet.GA_ID
   },
 
   /*
