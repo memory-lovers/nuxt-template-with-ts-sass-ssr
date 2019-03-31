@@ -27,7 +27,8 @@ const config: NuxtConfiguration = {
   ** Global CSS
   */
   css: [
-    "~/assets/css/buefy.scss"
+    "~/assets/css/buefy.scss",
+    "~/assets/css/transition.scss"
   ],
 
   /*
