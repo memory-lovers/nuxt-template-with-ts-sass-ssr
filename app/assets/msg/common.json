@@ -1,1 +1,30 @@
-{}
+{
+  "ja": {
+    "home_title": "ホーム",
+    "inspire_title": "インスパイヤ",
+    "home_card_1_title": "フリー",
+    "home_card_1_body": "<a href=\"https://github.com/buefy/buefy\"> GitHub</a>のオープンソース",
+    "home_card_2_title": "レスポンシブ",
+    "home_card_2_body": "<b class=\"has-text-grey\">全</b>コンポーネントがレスポンシブ",
+    "home_card_3_title": "モダン",
+    "home_card_3_body": "<a href=\"https://vuejs.org/\">Vue.js</a>と<a href=\"http://bulma.io/\">Bulma</a>で構成",
+    "home_card_4_title": "軽量",
+    "home_card_4_body": "他の内部依存関係はありません",
+    "inspire_heading": "はじめよう",
+    "inspire_subheading": "作ったひと: <a href=\"https://github.com/memory-lovers\">めもらば</a>"
+  },
+  "en": {
+    "home_title": "Home",
+    "inspire_title": "Inspire",
+    "home_card_1_title": "Free",
+    "home_card_1_body": "Open source on <a href=\"https://github.com/buefy/buefy\"> GitHub</a>",
+    "home_card_2_title": "Responsive",
+    "home_card_2_body": "<b class=\"has-text-grey\">Every</b> component is responsive",
+    "home_card_3_title": "Modern",
+    "home_card_3_body": "Built with <a href=\"https://vuejs.org/\">Vue.js</a> and <a href=\"http://bulma.io/\">Bulma</a>",
+    "home_card_4_title": "Lightweight",
+    "home_card_4_body": "No other internal dependency",
+    "inspire_heading": "Just start",
+    "inspire_subheading": "Author: <a href=\"https://github.com/memory-lovers\">Memory Lovers</a>"
+  }
+}

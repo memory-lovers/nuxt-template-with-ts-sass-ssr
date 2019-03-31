@@ -3,31 +3,31 @@
     <div class="columns is-mobile">
 
       <card
-        title="Free"
+        :title="$t('home_card_1_title')"
         icon="github-circle"
       >
-        Open source on <a href="https://github.com/buefy/buefy"> GitHub</a>
+        <span v-html="$t('home_card_1_body')"></span>
       </card>
 
       <card
-        title="Responsive"
+        :title="$t('home_card_2_title')"
         icon="cellphone-link"
       >
-        <b class="has-text-grey">Every</b> component is responsive
+        <span v-html="$t('home_card_2_body')"></span>
       </card>
 
       <card
-        title="Modern"
+        :title="$t('home_card_3_title')"
         icon="alert-decagram"
       >
-        Built with <a href="https://vuejs.org/">Vue.js</a> and <a href="http://bulma.io/">Bulma</a>
+        <span v-html="$t('home_card_3_body')"></span>
       </card>
 
       <card
-        title="Lightweight"
+        :title="$t('home_card_4_title')"
         icon="arrange-bring-to-front"
       >
-        No other internal dependency
+        <span v-html="$t('home_card_4_body')"></span>
       </card>
 
     </div>

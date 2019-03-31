@@ -8,7 +8,7 @@
       <div class="navbar-brand">
         <a
           class="navbar-item"
-          href="/"
+          :href="localePath('index')"
         >
           <img
             src="~assets/buefy.png"
@@ -35,10 +35,10 @@
             :key="key"
           >
             <nuxt-link
-              :to="item.to"
+              :to="localePath(item.to.name)"
               exact-active-class="is-active"
             >
-              <b-icon :icon="item.icon" /> {{ item.title }}
+              <b-icon :icon="item.icon" /> {{ $t(item.title) }}
             </nuxt-link>
           </li>
         </ul>
@@ -60,12 +60,12 @@ import { Component, Vue } from "nuxt-property-decorator";
 export default class DefaultLayout extends Vue {
   items = [
     {
-      title: 'Home',
+      title: 'home_title',
       icon: 'home',
       to: { name: 'index' }
     },
     {
-      title: 'Inspire',
+      title: 'inspire_title',
       icon: 'lightbulb',
       to: { name: 'inspire' }
     }
